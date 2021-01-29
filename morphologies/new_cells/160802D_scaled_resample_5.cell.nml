@@ -1770,6 +1770,13 @@
                 <distal x="25.332335" y="24.20914" z="7.9415236" diameter="1.36"/>
             </segment>
 
+
+            <segment id="500" name="Comp_500">
+                <parent segment="1"/>
+                <distal x="0" y="0" z="10" diameter="1"/>
+            </segment>
+
+
             <segmentGroup id="Soma" neuroLexId="sao864921383">    <!--
                 This group contains an unbranched set of segments, and all of the segmentGroups marked with
                 neuroLexId = sao864921383 form a non-overlapping set of all of the segments. 
@@ -1779,6 +1786,8 @@
             
                 <member segment="1"/>
             </segmentGroup>
+
+
 
             <segmentGroup id="Sec_Comp_2" neuroLexId="sao864921383">    <!--
                 This group contains an unbranched set of segments, and all of the segmentGroups marked with
@@ -2640,8 +2649,18 @@
                 <member segment="336"/>
             </segmentGroup>
 
+            <segmentGroup id="axon_group">    <!--
+                This group contains an unbranched set of segments, and all of the segmentGroups marked with
+                neuroLexId = sao864921383 form a non-overlapping set of all of the segments. 
+                These segmentGroups correspond to the 'cables' of NeuroML v1.8.1. -->
+
+                <member segment="500"/>
+            </segmentGroup>
+
+
             <segmentGroup id="all">
                 <include segmentGroup="Soma"/>
+                <include segmentGroup="axon_group"/>
                 <include segmentGroup="Sec_Comp_2"/>
                 <include segmentGroup="Sec_Comp_3"/>
                 <include segmentGroup="Sec_Comp_6"/>
@@ -2759,18 +2778,25 @@
 
             <membraneProperties>
                 <!-- soma -->
-                <channelDensity condDensity="240 mS_per_cm2" id="na_s_soma" segmentGroup="soma_group" ionChannel="na_s" ion="na" erev="55 mV"/>
-                <channelDensity condDensity="9 mS_per_cm2" id="kdr_soma" segmentGroup="soma_group" 
+                <channelDensity condDensity="30 mS_per_cm2" id="na_s_soma" segmentGroup="soma_group" ionChannel="na_s" ion="na" erev="55 mV"/>
+                <channelDensity condDensity="30 mS_per_cm2" id="kdr_soma" segmentGroup="soma_group" 
                 ionChannel="kdr" ion="k" erev="-75 mV"/>
-                <channelDensity condDensity="5 mS_per_cm2" id="k_soma" segmentGroup="soma_group"
+                <channelDensity condDensity="15 mS_per_cm2" id="k_soma" segmentGroup="soma_group"
                 ionChannel="k" ion="k" erev="-75 mV"/>
-                <channelDensity condDensity="10 mS_per_cm2" id="cal_soma" segmentGroup="soma_group"
+                <channelDensity condDensity="20 mS_per_cm2" id="cal_soma" segmentGroup="soma_group"
                 ionChannel="cal" ion="cal" erev="120 mV"/>
 
                 <!-- dendrite 10 35 25--> 
                 <channelDensity condDensity="10 mS_per_cm2" id="cah_dend" segmentGroup="dendrite_group" ionChannel="cah" ion="ca" erev="120 mV"/>
                 <channelDensity condDensity="35 mS_per_cm2" id="kca_dend" segmentGroup="dendrite_group" ionChannel="kca" ion="k" erev="-75 mV"/>
                 <channelDensity condDensity="1.2 mS_per_cm2" id="h_dend" segmentGroup="dendrite_group" ionChannel="h" ion="k" erev="-43 mV"/>
+                <channelDensity condDensity="200 mS_per_cm2" id="k_axon" segmentGroup="dendrite_group" ionChannel="k" ion="k" erev="-75 mV"/>
+
+
+                <!-- axon -->
+                <channelDensity condDensity="200 mS_per_cm2" id="na_axon" segmentGroup="axon_group" ionChannel="na_a" ion="na" erev="55 mV"/>
+                <channelDensity condDensity="200 mS_per_cm2" id="k_axon" segmentGroup="axon_group" ionChannel="k" ion="k" erev="-75 mV"/>
+
 
                 <channelDensity condDensity="1.3e-2 mS_per_cm2" id="leak_all" segmentGroup="all" ionChannel="leak" ion="_leak" erev="10 mV"/>
                 
