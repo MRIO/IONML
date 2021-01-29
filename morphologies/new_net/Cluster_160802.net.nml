@@ -21,6 +21,12 @@
 		</instance>
 	</population>
 
+	<population id="pop3" component="IO_160802A" type="populationList" size="1">
+		<instance id="0">
+			<location x="-20" y="-20" z="0"/>
+		</instance>
+	</population>
+
 
 
 
