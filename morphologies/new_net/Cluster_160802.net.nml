@@ -24,10 +24,22 @@
 
 
 
-    <inputList id="Clamps" component="iclamp0" population="pop0">
+    <inputList id="Clamps1" component="iclamp0" population="pop0">
         <input id="0" target="../pop0/0/IO_160802D" segmentId="0" destination="synapses"/> 
     </inputList>
     
+    <inputList id="Clamps2" component="iclamp1" population="pop0">
+        <input id="0" target="../pop0/0/IO_160802D" segmentId="0" destination="synapses"/> 
+    </inputList>
+
+	<inputList id="Clamps3" component="iclamp0" population="pop1">
+        <input id="0" target="../pop0/0/IO_160802E" segmentId="0" destination="synapses"/> 
+    </inputList>
+    
+    <inputList id="Clamps4" component="iclamp1" population="pop1">
+        <input id="0" target="../pop0/0/IO_160802E" segmentId="0" destination="synapses"/> 
+    </inputList>
+
 
 
 </network>
