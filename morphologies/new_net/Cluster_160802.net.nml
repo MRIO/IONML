@@ -3,6 +3,7 @@
 
 <include href="../new_cells/160802D_scaled_resample_5.cell.nml"/>
 <include href="../new_cells/160802E_scaled_resample_5.cell.nml"/>
+<include href="../new_cells/160802A_scaled_resample_5.cell.nml"/>
 
 <pulseGenerator id="iclamp0" delay="300 ms" duration="10 ms" amplitude="-1 nA"/>
 <pulseGenerator id="iclamp1" delay="800 ms" duration="10 ms" amplitude="1 nA"/>
