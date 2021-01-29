@@ -4,8 +4,8 @@
 <include href="../new_cells/160802D_scaled_resample_5.cell.nml"/>
 <include href="../new_cells/160802E_scaled_resample_5.cell.nml"/>
 
-<pulseGenerator id="iclamp0" delay="300 ms" duration="50 ms" amplitude="-1 nA"/>
-<pulseGenerator id="iclamp1" delay="800 ms" duration="50 ms" amplitude="1 nA"/>
+<pulseGenerator id="iclamp0" delay="300 ms" duration="10 ms" amplitude="-1 nA"/>
+<pulseGenerator id="iclamp1" delay="800 ms" duration="10 ms" amplitude="1 nA"/>
 
 <network id="net" type="networkWithTemperature" temperature="35 degC">
 
@@ -33,11 +33,11 @@
     </inputList>
 
 	<inputList id="Clamps3" component="iclamp0" population="pop1">
-        <input id="0" target="../pop0/0/IO_160802E" segmentId="0" destination="synapses"/> 
+        <input id="0" target="../pop1/0/IO_160802E" segmentId="0" destination="synapses"/> 
     </inputList>
     
     <inputList id="Clamps4" component="iclamp1" population="pop1">
-        <input id="0" target="../pop0/0/IO_160802E" segmentId="0" destination="synapses"/> 
+        <input id="0" target="../pop1/0/IO_160802E" segmentId="0" destination="synapses"/> 
     </inputList>
 
 
