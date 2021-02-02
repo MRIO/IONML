@@ -2785,7 +2785,7 @@
                 <!-- dendrite 10 35 25--> 
                 <channelDensity condDensity="10 mS_per_cm2" id="cah_dend" segmentGroup="dendrite_group" ionChannel="cah" ion="ca" erev="120 mV"/>
                 <channelDensity condDensity="35 mS_per_cm2" id="kca_dend" segmentGroup="dendrite_group" ionChannel="kca" ion="k" erev="-75 mV"/>
-                <channelDensity condDensity="1.2 mS_per_cm2" id="h_dend" segmentGroup="dendrite_group" ionChannel="h" ion="k" erev="-43 mV"/>
+                <channelDensity condDensity="30 mS_per_cm2" id="h_dend" segmentGroup="dendrite_group" ionChannel="h" ion="k" erev="-43 mV"/>
                 <channelDensity condDensity="200 mS_per_cm2" id="k_axon" segmentGroup="dendrite_group" ionChannel="k" ion="k" erev="-75 mV"/>
 
 
@@ -2806,8 +2806,8 @@
             <intracellularProperties>
                 <species segmentGroup="dendrite_group" id="ca" ion="ca" concentrationModel="ca_conc" initialConcentration="3.7152 mM" initialExtConcentration="3.0mM"/>
 
-                <resistivity value=".5 ohm_cm" segmentGroup="soma_group"/>
-                <resistivity value=".5 ohm_cm" segmentGroup="dendrite_group"/>
+                <resistivity value=".1 ohm_cm" segmentGroup="soma_group"/>
+                <resistivity value=".1 ohm_cm" segmentGroup="dendrite_group"/>
             </intracellularProperties>
 
         </biophysicalProperties>
