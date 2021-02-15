@@ -10,7 +10,7 @@
 
 <network id="net" type="networkWithTemperature" temperature="35 degC">
 
-	<population id="pop0" component="IO_160802A" type="populationList" size="1">
+	<population id="pop0" component="IO_160802D" type="populationList" size="1">
 		<instance id="0">
 			<location x="-20" y="-20" z="0"/>
 		</instance>
@@ -32,11 +32,11 @@
 	
 
     <inputList id="Clamps1" component="iclamp0" population="pop0">
-        <input id="0" target="../pop0/0/IO_160802A" segmentId="0" destination="synapses"/> 
+        <input id="0" target="../pop0/0/IO_160802D" segmentId="0" destination="synapses"/> 
     </inputList>
     
     <inputList id="Clamps2" component="iclamp1" population="pop0">
-        <input id="0" target="../pop0/0/IO_160802A" segmentId="0" destination="synapses"/> 
+        <input id="0" target="../pop0/0/IO_160802D" segmentId="0" destination="synapses"/> 
     </inputList>
 
 <!-- 	<inputList id="Clamps3" component="iclamp0" population="pop1">
