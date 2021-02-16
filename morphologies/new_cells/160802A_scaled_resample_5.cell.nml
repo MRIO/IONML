@@ -2369,8 +2369,8 @@
             <intracellularProperties>
                 <species segmentGroup="dendrite_group" id="ca" ion="ca" concentrationModel="ca_conc" initialConcentration="3.7152 mM" initialExtConcentration="3.0mM"/>
 
-                <resistivity value=".1 ohm_cm" segmentGroup="soma_group"/>
-                <resistivity value=".1 ohm_cm" segmentGroup="dendrite_group"/>
+                <resistivity value="100 ohm_cm" segmentGroup="soma_group"/>
+                <resistivity value="100 ohm_cm" segmentGroup="dendrite_group"/>
             </intracellularProperties>
 
         </biophysicalProperties>
